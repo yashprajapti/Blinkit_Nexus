@@ -1,2 +1,8 @@
-# Blinkit_Nexus
-End-to-end analysis of 5,000 Blinkit orders: Excel cleaning, DuckDB SQL in Jupyter, Python statistics and forecasting, and a single-file interactive web dashboard. 15 notebooks, 92 SQL queries, 25 findings, 10 recommendations.
+# Notebooks
+
+`00_Master_Analysis.ipynb` runs the whole analysis end to end, 120 steps, and exports the result
+workbook. The numbered notebooks cover one topic each and can be run on their own, because every
+notebook builds its own DuckDB database from the workbook first.
+
+Place `Blinkit_analysis_new.xlsx` in `../data/` before running anything.
+The notebook map is in [`../docs/05_Analysis_Guide.md`](../docs/05_Analysis_Guide.md).
